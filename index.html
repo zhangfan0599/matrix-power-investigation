@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matrix Power (梅威斯电气技术) 真相调查 - 深入分析梅威斯电气技术（上海）有限公司的真实经营状况、融资疑云及核心技术真实性。">
+    <meta name="keywords" content="Matrix Power, 梅威斯电气技术, 融资调查, 技术真实性, 商业模式分析, 投资风险, 91310112MA1GD2YY4Q">
+    <meta name="author" content="Investigation Team">
+    <meta property="og:title" content="Matrix Power真相调查 - 梅威斯电气技术深度分析">
+    <meta property="og:description" content="深入调查Matrix Power (梅威斯电气技术) 的融资、技术和商业模式真实性">
+    <meta property="og:type" content="website">
+    <title>Matrix Power真相调查 | Mavis Electrical Technology Investigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #667eea;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .language-toggle:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .risk-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table th {
+            background-color: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .nav-tabs button {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-tabs button:hover {
+            background: #f0f4ff;
+        }
+        
+        .nav-tabs button.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        .en-text {
+            display: none;
+        }
+        
+        .en-text.active {
+            display: inline;
+        }
+        
+        .zh-text {
+            display: inline;
+        }
+        
+        .zh-text.active {
+            display: inline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .nav-tabs button {
+                width: 100%;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            table th, table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="language-toggle" onclick="toggleLanguage()">English / 中文</button>
+    
+    <header>
+        <h1><span class="zh-text">Matrix Power 真相调查</span><span class="en-text" style="display:none;">Matrix Power Investigation</span></h1>
+        <p><span class="zh-text">梅威斯电气技术（上海）有限公司深度分析报告</span><span class="en-text" style="display:none;">Comprehensive Analysis of Mavis Electrical Technology (Shanghai) Co., Ltd.</span></p>
+    </header>
+    
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('overview')"><span class="zh-text">概览</span><span class="en-text" style="display:none;">Overview</span></button>
+            <button class="tab-btn" onclick="switchTab('company')"><span class="zh-text">公司信息</span><span class="en-text" style="display:none;">Company Info</span></button>
+            <button class="tab-btn" onclick="switchTab('findings')"><span class="zh-text">核心发现</span><span class="en-text" style="display:none;">Key Findings</span></button>
+            <button class="tab-btn" onclick="switchTab('risks')"><span class="zh-text">风险评估</span><span class="en-text" style="display:none;">Risk Assessment</span></button>
+            <button class="tab-btn" onclick="switchTab('questions')"><span class="zh-text">关键问题</span><span class="en-text" style="display:none;">Key Questions</span></button>
+        </div>
+        
+        <!-- Overview Section -->
+        <div id="overview" class="section active">
+            <h2><span class="zh-text">调查概览</span><span class="en-text" style="display:none;">Investigation Overview</span></h2>
+            
+            <p><span class="zh-text">本调查针对Matrix Power（梅威斯电气技术（上海）有限公司，纳税号：91310112MA1GD2YY4Q）进行了深入分析。该公司近期宣称获得数千万元融资、拥有近亿订单、具有核心技术能力，但通过对公开信息的梳理，我们发现这些宣传与实际情况存在重大差异。</span><span class="en-text" style="display:none;">This investigation provides an in-depth analysis of Matrix Power (Mavis Electrical Technology (Shanghai) Co., Ltd., Tax ID: 91310112MA1GD2YY4Q). The company recently claimed to have received tens of millions in financing, secured nearly 100 million in orders, and possesses core technological capabilities. However, through careful review of public information, we have found significant discrepancies between these claims and the actual situation.</span></p>
+            
+            <div class="warning-box">
+                <strong><span class="zh-text">⚠️ 重要提示</span><span class="en-text" style="display:none;">⚠️ Important Notice</span></strong>
+                <p><span class="zh-text">本报告基于公开信息编制，旨在为投资者和合作伙伴提供参考。所有数据均来自企业信用公示网、工商年报等公开渠道。</span><span class="en-text" style="display:none;">This report is compiled based on publicly available information and is intended to provide reference for investors and partners. All data comes from public sources such as enterprise credit disclosure networks and business annual reports.</span></p>
+            </div>
+            
+            <h3><span class="zh-text">调查要点</span><span class="en-text" style="display:none;">Investigation Highlights</span></h3>
+            <ul style="margin-left: 20px;">
+                <li><span class="zh-text">公司注册资本2045万元，但实缴仅247万元，占比仅12%</span><span class="en-text" style="display:none;">Company registered capital is 20.45 million yuan, but paid-in capital is only 2.47 million yuan, representing only 12%</span></li>
+                <li><span class="zh-text">2024年进行了减资公告，表明财务状况恶化</span><span class="en-text" style="display:none;">The company announced capital reduction in 2024, indicating deteriorating financial conditions</span></li>
+                <li><span class="zh-text">从1000多平的生产场所搬迁到小房间，对外宣称仅用于研发测试</span><span class="en-text" style="display:none;">Relocated from a 1000+ sqm production facility to a small room, claiming it is only for R&D testing</span></li>
+                <li><span class="zh-text">所有核心产品均为代工生产，公司仅具备集成能力</span><span class="en-text" style="display:none;">All core products are manufactured by third parties; the company only has integration capabilities</span></li>
+                <li><span class="zh-text">确定订单远低于80万元，与"亿元订单"宣传不符</span><span class="en-text" style="display:none;">Confirmed orders are far below 800,000 yuan, inconsistent with claims of 100 million yuan orders</span></li>
+            </ul>
+        </div>
+        
+        <!-- Company Info Section -->
+        <div id="company" class="section">
+            <h2><span class="zh-text">公司基本信息</span><span class="en-text" style="display:none;">Company Information</span></h2>
+            
+            <table>
+                <tr>
+                    <th><span class="zh-text">项目</span><span class="en-text" style="display:none;">Item</span></th>
+                    <th><span class="zh-text">信息</span><span class="en-text" style="display:none;">Details</span></th>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">中文公司名</span><span class="en-text" style="display:none;">Chinese Company Name</span></td>
+                    <td>梅威斯电气技术（上海）有限公司</td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">英文公司名</span><span class="en-text" style="display:none;">English Company Name</span></td>
+                    <td>Matrix Power / Mavis Electrical Technology (Shanghai) Co., Ltd.</td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">品牌名</span><span class="en-text" style="display:none;">Brand Name</span></td>
+                    <td>Matrix</td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">纳税号</span><span class="en-text" style="display:none;">Tax ID</span></td>
+                    <td>91310112MA1GD2YY4Q</td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">成立日期</span><span class="en-text" style="display:none;">Establishment Date</span></td>
+                    <td><span class="zh-text">2020年5月26日</span><span class="en-text" style="display:none;">May 26, 2020</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">注册地址</span><span class="en-text" style="display:none;">Registered Address</span></td>
+                    <td><span class="zh-text">上海市闵行区东川路555号己楼2层</span><span class="en-text" style="display:none;">Building J, 2nd Floor, 555 Dongchuan Road, Minhang District, Shanghai</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">法定代表人</span><span class="en-text" style="display:none;">Legal Representative</span></td>
+                    <td><span class="zh-text">李小华（Jane）</span><span class="en-text" style="display:none;">Li Xiaohua (Jane)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">主要股东</span><span class="en-text" style="display:none;">Major Shareholder</span></td>
+                    <td><span class="zh-text">丁军军（Jackie）- 李小华配偶</span><span class="en-text" style="display:none;">Ding Junjun (Jackie) - Spouse of Li Xiaohua</span></td>
+                </tr>
+            </table>
+            
+            <h3><span class="zh-text">资本结构</span><span class="en-text" style="display:none;">Capital Structure</span></h3>
+            <table>
+                <tr>
+                    <th><span class="zh-text">指标</span><span class="en-text" style="display:none;">Metric</span></th>
+                    <th><span class="zh-text">数值</span><span class="en-text" style="display:none;">Value</span></th>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">注册资本</span><span class="en-text" style="display:none;">Registered Capital</span></td>
+                    <td>20,454,545 <span class="zh-text">元</span><span class="en-text" style="display:none;">yuan</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">实缴资本</span><span class="en-text" style="display:none;">Paid-in Capital</span></td>
+                    <td>2,472,283 <span class="zh-text">元</span><span class="en-text" style="display:none;">yuan</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">实缴比例</span><span class="en-text" style="display:none;">Paid-in Ratio</span></td>
+                    <td>12.08%</td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">认缴比例</span><span class="en-text" style="display:none;">Subscribed Ratio</span></td>
+                    <td>87.92%</td>
+                </tr>
+            </table>
+            
+            <div class="info-box">
+                <strong><span class="zh-text">📊 资本分析</span><span class="en-text" style="display:none;">📊 Capital Analysis</span></strong>
+                <p><span class="zh-text">注册资本与实缴资本的巨大差异表明公司的实际资金储备远低于注册资本。这种高认缴、低实缴的模式在初创企业中较为常见，但在经营多年的公司中可能反映出融资困难或资金链紧张的问题。</span><span class="en-text" style="display:none;">The significant gap between registered and paid-in capital indicates that the company's actual financial reserves are far below its registered capital. This pattern of high subscription but low payment is common in startups, but in established companies may reflect financing difficulties or cash flow tensions.</span></p>
+            </div>
+        </div>
+        
+        <!-- Findings Section -->
+        <div id="findings" class="section">
+            <h2><span class="zh-text">核心发现</span><span class="en-text" style="display:none;">Key Findings</span></h2>
+            
+            <h3><span class="zh-text">1. 融资与投资疑云</span><span class="en-text" style="display:none;">1. Financing and Investment Concerns</span></h3>
+            <p><span class="zh-text">Matrix Power在2025年3月宣称获得"A轮"融资，涉及融资金额数千万人民币，投资机构为星星充电。然而，这一宣传存在多个疑点：</span><span class="en-text" style="display:none;">Matrix Power claimed in March 2025 to have received "Series A" financing of tens of millions of yuan from Xingxing Charging. However, this claim has several questionable aspects:</span></p>
+            
+            <div class="warning-box">
+                <strong><span class="zh-text">融资疑点</span><span class="en-text" style="display:none;">Financing Concerns</span></strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><span class="zh-text">常州星瀚启辰企业管理合伙企业（有限合伙）仅持股5.8824%，与"数千万融资"不符</span><span class="en-text" style="display:none;">Changzhou Xinghao Qichen Enterprise Management Partnership holds only 5.8824% stake, inconsistent with "tens of millions in financing"</span></li>
+                    <li><span class="zh-text">常州星瀚启辰与星星充电的实际关系需要深入核查</span><span class="en-text" style="display:none;">The actual relationship between Changzhou Xinghao Qichen and Xingxing Charging requires further investigation</span></li>
+                    <li><span class="zh-text">公司确定订单远低于80万元，与融资后的业务扩展预期不符</span><span class="en-text" style="display:none;">Confirmed orders are far below 800,000 yuan, inconsistent with expected business expansion after financing</span></li>
+                </ul>
+            </div>
+            
+            <h3><span class="zh-text">2. 场所变迁与业绩恶化</span><span class="en-text" style="display:none;">2. Facility Relocation and Performance Decline</span></h3>
+            <p><span class="zh-text">2025年初，Matrix Power从原来位于F栋3楼的1000多平方米的生产办公场所搬迁到B栋5楼的小房间。公司对外宣称这里仅用于测试和研发，但实际上这仍然是生产和办公区域。这一变化反映出：</span><span class="en-text" style="display:none;">In early 2025, Matrix Power relocated from a 1000+ sqm production and office facility on the 3rd floor of Building F to a small room on the 5th floor of Building B. The company claims this space is only for testing and R&D, but it actually serves as both production and office area. This change reflects:</span></p>
+            
+            <ul style="margin-left: 20px;">
+                <li><span class="zh-text">业务规模大幅缩小</span><span class="en-text" style="display:none;">Significant reduction in business scale</span></li>
+                <li><span class="zh-text">没有业绩支撑，资金链出现问题</span><span class="en-text" style="display:none;">Lack of performance to support operations and cash flow issues</span></li>
+                <li><span class="zh-text">对外宣传与实际情况不符</span><span class="en-text" style="display:none;">Discrepancy between public statements and actual situation</span></li>
+            </ul>
+            
+            <h3><span class="zh-text">3. 核心技术真实性问题</span><span class="en-text" style="display:none;">3. Questions About Core Technology Authenticity</span></h3>
+            <p><span class="zh-text">Matrix Power对外宣称拥有核心技术，仅将生产外包。但实际情况是：</span><span class="en-text" style="display:none;">Matrix Power claims to possess core technology and only outsources production. However, the reality is:</span></p>
+            
+            <div class="risk-box">
+                <strong><span class="zh-text">🚨 技术真相</span><span class="en-text" style="display:none;">🚨 Technology Reality</span></strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><span class="zh-text">整流模块、锂电池等所有核心产品均为代工生产</span><span class="en-text" style="display:none;">All core products including rectifier modules and lithium batteries are manufactured by third parties</span></li>
+                    <li><span class="zh-text">公司仅具备集成能力，即购买别人的模块、电池等核心产品，然后组装</span><span class="en-text" style="display:none;">The company only has integration capabilities - purchasing modules, batteries and other core products from others, then assembling them</span></li>
+                    <li><span class="zh-text">整流模块和监控套装来自前东家Eltek</span><span class="en-text" style="display:none;">Rectifier modules and monitoring systems come from former employer Eltek</span></li>
+                    <li><span class="zh-text">对Eltek产品的性能和设置熟悉，但这不是自主研发能力</span><span class="en-text" style="display:none;">Familiarity with Eltek products' performance and configuration does not constitute independent R&D capability</span></li>
+                    <li><span class="zh-text">所有产品都贴上Matrix品牌，对外声称核心技术自主</span><span class="en-text" style="display:none;">All products are branded as Matrix with claims of independent core technology</span></li>
+                </ul>
+            </div>
+            
+            <h3><span class="zh-text">4. 商业模式分析</span><span class="en-text" style="display:none;">4. Business Model Analysis</span></h3>
+            <p><span class="zh-text">Matrix Power的主要业务是代加工（OEM），其订单来源主要为：</span><span class="en-text" style="display:none;">Matrix Power's main business is contract manufacturing (OEM), with orders primarily from:</span></p>
+            
+            <table>
+                <tr>
+                    <th><span class="zh-text">订单来源</span><span class="en-text" style="display:none;">Order Source</span></th>
+                    <th><span class="zh-text">特点</span><span class="en-text" style="display:none;">Characteristics</span></th>
+                    <th><span class="zh-text">风险</span><span class="en-text" style="display:none;">Risk</span></th>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">一手订单</span><span class="en-text" style="display:none;">Direct Orders</span></td>
+                    <td><span class="zh-text">极少</span><span class="en-text" style="display:none;">Very rare</span></td>
+                    <td><span class="zh-text">低</span><span class="en-text" style="display:none;">Low</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">二手订单</span><span class="en-text" style="display:none;">Secondary Orders</span></td>
+                    <td><span class="zh-text">大多数</span><span class="en-text" style="display:none;">Majority</span></td>
+                    <td><span class="zh-text">中等</span><span class="en-text" style="display:none;">Medium</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">三手订单</span><span class="en-text" style="display:none;">Tertiary Orders</span></td>
+                    <td><span class="zh-text">部分</span><span class="en-text" style="display:none;">Some</span></td>
+                    <td><span class="zh-text">高</span><span class="en-text" style="display:none;">High</span></td>
+                </tr>
+            </table>
+            
+            <p><span class="zh-text">这种商业模式存在以下问题：</span><span class="en-text" style="display:none;">This business model has the following issues:</span></p>
+            <ul style="margin-left: 20px;">
+                <li><span class="zh-text">没有自主客户，完全依赖中间商</span><span class="en-text" style="display:none;">No direct customers, completely dependent on intermediaries</span></li>
+                <li><span class="zh-text">利润空间被层层压缩</span><span class="en-text" style="display:none;">Profit margins compressed by multiple layers</span></li>
+                <li><span class="zh-text">订单稳定性差，容易被替代</span><span class="en-text" style="display:none;">Poor order stability, easily replaceable</span></li>
+                <li><span class="zh-text">难以形成品牌价值</span><span class="en-text" style="display:none;">Difficult to build brand value</span></li>
+            </ul>
+            
+            <h3><span class="zh-text">5. 减资公告与财务恶化</span><span class="en-text" style="display:none;">5. Capital Reduction and Financial Deterioration</span></h3>
+            <p><span class="zh-text">2024年Matrix Power进行了减资公告。减资通常意味着：</span><span class="en-text" style="display:none;">Matrix Power announced capital reduction in 2024. Capital reduction typically indicates:</span></p>
+            <ul style="margin-left: 20px;">
+                <li><span class="zh-text">公司经营困难，需要调整资本结构</span><span class="en-text" style="display:none;">Company operating difficulties requiring capital restructuring</span></li>
+                <li><span class="zh-text">可能存在亏损或资金链紧张</span><span class="en-text" style="display:none;">Possible losses or cash flow constraints</span></li>
+                <li><span class="zh-text">投资者信心不足</span><span class="en-text" style="display:none;">Lack of investor confidence</span></li>
+            </ul>
+        </div>
+        
+        <!-- Risk Assessment Section -->
+        <div id="risks" class="section">
+            <h2><span class="zh-text">风险评估</span><span class="en-text" style="display:none;">Risk Assessment</span></h2>
+            
+            <h3><span class="zh-text">投资风险等级</span><span class="en-text" style="display:none;">Investment Risk Levels</span></h3>
+            
+            <table>
+                <tr>
+                    <th><span class="zh-text">风险维度</span><span class="en-text" style="display:none;">Risk Dimension</span></th>
+                    <th><span class="zh-text">等级</span><span class="en-text" style="display:none;">Level</span></th>
+                    <th><span class="zh-text">说明</span><span class="en-text" style="display:none;">Description</span></th>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">融资可信度</span><span class="en-text" style="display:none;">Financing Credibility</span></td>
+                    <td><span style="color: red; font-weight: bold;"><span class="zh-text">低</span><span class="en-text" style="display:none;">Low</span></span></td>
+                    <td><span class="zh-text">宣传与实际情况严重不符</span><span class="en-text" style="display:none;">Significant discrepancy between claims and reality</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">技术自主性</span><span class="en-text" style="display:none;">Technology Independence</span></td>
+                    <td><span style="color: red; font-weight: bold;"><span class="zh-text">无</span><span class="en-text" style="display:none;">None</span></span></td>
+                    <td><span class="zh-text">所有核心产品均为代工，仅具备集成能力</span><span class="en-text" style="display:none;">All core products are outsourced, only integration capability</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">商业模式可持续性</span><span class="en-text" style="display:none;">Business Model Sustainability</span></td>
+                    <td><span style="color: red; font-weight: bold;"><span class="zh-text">弱</span><span class="en-text" style="display:none;">Weak</span></span></td>
+                    <td><span class="zh-text">依赖二三手订单，容易被替代</span><span class="en-text" style="display:none;">Dependent on secondary/tertiary orders, easily replaceable</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">财务健康度</span><span class="en-text" style="display:none;">Financial Health</span></td>
+                    <td><span style="color: red; font-weight: bold;"><span class="zh-text">恶化</span><span class="en-text" style="display:none;">Deteriorating</span></span></td>
+                    <td><span class="zh-text">减资、搬迁、订单不足等信号</span><span class="en-text" style="display:none;">Signals of capital reduction, relocation, insufficient orders</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zh-text">管理透明度</span><span class="en-text" style="display:none;">Management Transparency</span></td>
+                    <td><span style="color: red; font-weight: bold;"><span class="zh-text">低</span><span class="en-text" style="display:none;">Low</span></span></td>
+                    <td><span class="zh-text">宣传与实际情况不符，隐瞒真实业务模式</span><span class="en-text" style="display:none;">Misrepresentation, concealing actual business model</span></td>
+                </tr>
+            </table>
+            
+            <h3><span class="zh-text">对投资者的建议</span><span class="en-text" style="display:none;">Recommendations for Investors</span></h3>
+            
+            <div class="risk-box">
+                <strong><span class="zh-text">⚠️ 投资警告</span><span class="en-text" style="display:none;">⚠️ Investment Warning</span></strong>
+                <p><span class="zh-text">基于以上分析，我们强烈建议投资者和合作伙伴在与Matrix Power进行任何商业合作前，进行以下尽职调查：</span><span class="en-text" style="display:none;">Based on the above analysis, we strongly recommend investors and partners conduct the following due diligence before any business cooperation with Matrix Power:</span></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><span class="zh-text">验证融资信息的真实性，包括投资方的身份和投资金额</span><span class="en-text" style="display:none;">Verify the authenticity of financing information, including investor identity and investment amount</span></li>
+                    <li><span class="zh-text">要求提供订单合同和业务收入证明</span><span class="en-text" style="display:none;">Request order contracts and business revenue documentation</span></li>
+                    <li><span class="zh-text">深入了解产品的研发和生产过程</span><span class="en-text" style="display:none;">Understand the product development and manufacturing process in detail</span></li>
+                    <li><span class="zh-text">审查财务报表和税务记录</span><span class="en-text" style="display:none;">Review financial statements and tax records</span></li>
+                    <li><span class="zh-text">核实员工规模和社保缴纳情况</span><span class="en-text" style="display:none;">Verify employee count and social insurance contributions</span></li>
+                    <li><span class="zh-text">了解与Eltek等前东家的关系</span><span class="en-text" style="display:none;">Understand relationships with former employers like Eltek</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Key Questions Section -->
+        <div id="questions" class="section">
+            <h2><span class="zh-text">关键问题清单</span><span class="en-text" style="display:none;">Key Questions Checklist</span></h2>
+            
+            <p><span class="zh-text">以下是投资者和合作伙伴应该向Matrix Power提出的关键问题：</span><span class="en-text" style="display:none;">The following are key questions that investors and partners should ask Matrix Power:</span></p>
+            
+            <h3><span class="zh-text">财务相关问题</span><span class="en-text" style="display:none;">Financial Questions</span></h3>
+            <div class="info-box">
+                <ol style="margin-left: 20px;">
+                    <li><span class="zh-text">为什么注册资本高达2000万+，但实缴仅200多万？这反映了什么？</span><span class="en-text" style="display:none;">Why is registered capital over 20 million but paid-in capital only 2 million? What does this reflect?</span></li>
+                    <li><span class="zh-text">2024年的减资公告具体内容是什么？减资的原因是什么？</span><span class="en-text" style="display:none;">What are the specific details of the 2024 capital reduction announcement? What was the reason for the reduction?</span></li>
+                    <li><span class="zh-text">公司过去三年的营收和利润情况如何？</span><span class="en-text" style="display:none;">What were the company's revenues and profits over the past three years?</span></li>
+                    <li><span class="zh-text">社保缴纳人数是多少？与公司宣传的规模是否相符？</span><span class="en-text" style="display:none;">How many employees are covered by social insurance? Does this match the company's claimed scale?</span></li>
+                </ol>
+            </div>
+            
+            <h3><span class="zh-text">融资相关问题</span><span class="en-text" style="display:none;">Financing Questions</span></h3>
+            <div class="info-box">
+                <ol style="margin-left: 20px;">
+                    <li><span class="zh-text">所谓的"A轮融资"具体金额是多少？投资协议在哪里？</span><span class="en-text" style="display:none;">What is the specific amount of the "Series A financing"? Where is the investment agreement?</span></li>
+                    <li><span class="zh-text">星星充电或常州星瀚启辰的投资是否已经到位？资金用途是什么？</span><span class="en-text" style="display:none;">Has the investment from Xingxing Charging or Changzhou Xinghao Qichen been received? What is the fund usage?</span></li>
+                    <li><span class="zh-text">常州星瀚启辰与星星充电的关系是什么？是否存在关联方交易？</span><span class="en-text" style="display:none;">What is the relationship between Changzhou Xinghao Qichen and Xingxing Charging? Are there related party transactions?</span></li>
+                </ol>
+            </div>
+            
+            <h3><span class="zh-text">业务相关问题</span><span class="en-text" style="display:none;">Business Questions</span></h3>
+            <div class="info-box">
+                <ol style="margin-left: 20px;">
+                    <li><span class="zh-text">所谓的"近亿订单"具体是什么？能否提供订单合同？</span><span class="en-text" style="display:none;">What are the specific "nearly 100 million orders"? Can you provide order contracts?</span></li>
+                    <li><span class="zh-text">公司的确定订单（已签署合同）总额是多少？</span><span class="en-text" style="display:none;">What is the total amount of confirmed orders (signed contracts)?</span></li>
+                    <li><span class="zh-text">整流模块、锂电池等核心产品是从哪里采购的？是否来自Eltek？</span><span class="en-text" style="display:none;">Where are core products like rectifier modules and lithium batteries sourced from? Are they from Eltek?</span></li>
+                    <li><span class="zh-text">公司的核心技术是什么？有哪些专利或知识产权？</span><span class="en-text" style="display:none;">What are the company's core technologies? What patents or intellectual property do they have?</span></li>
+                </ol>
+            </div>
+            
+            <h3><span class="zh-text">运营相关问题</span><span class="en-text" style="display:none;">Operations Questions</span></h3>
+            <div class="info-box">
+                <ol style="margin-left: 20px;">
+                    <li><span class="zh-text">为什么从1000多平的生产场所搬迁到小房间？这是否意味着业务萎缩？</span><span class="en-text" style="display:none;">Why relocate from a 1000+ sqm facility to a small room? Does this indicate business contraction?</span></li>
+                    <li><span class="zh-text">新的办公地点是否真的仅用于测试和研发，还是也用于生产？</span><span class="en-text" style="display:none;">Is the new office location really only for testing and R&D, or is it also used for production?</span></li>
+                    <li><span class="zh-text">公司现有员工数量是多少？研发人员占比多少？</span><span class="en-text" style="display:none;">How many employees does the company currently have? What percentage are R&D staff?</span></li>
+                    <li><span class="zh-text">公司与Eltek等前东家的关系如何？是否存在竞争或冲突？</span><span class="en-text" style="display:none;">What is the company's relationship with former employers like Eltek? Are there any conflicts?</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p><span class="zh-text">© 2026 Matrix Power 真相调查 | 本报告基于公开信息编制，仅供参考</span><span class="en-text" style="display:none;">© 2026 Matrix Power Investigation | This report is based on publicly available information for reference only</span></p>
+        <p><span class="zh-text">纳税号：91310112MA1GD2YY4Q | 如有任何疑问或补充信息，欢迎联系我们</span><span class="en-text" style="display:none;">Tax ID: 91310112MA1GD2YY4Q | For questions or additional information, please contact us</span></p>
+    </footer>
+    
+    <script>
+        function switchTab(tabName) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+        
+        function toggleLanguage() {
+            const zhTexts = document.querySelectorAll('.zh-text');
+            const enTexts = document.querySelectorAll('.en-text');
+            
+            zhTexts.forEach(el => {
+                if (el.style.display === 'none') {
+                    el.style.display = 'inline';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            
+            enTexts.forEach(el => {
+                if (el.style.display === 'none') {
+                    el.style.display = 'inline';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
